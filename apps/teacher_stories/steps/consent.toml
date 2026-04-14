@@ -1,6 +1,6 @@
 [ui]
-title = "Welcome to this study task!"
-hide_title = true
+title = "👋 Welcome to this study task!"
+hide_title = false
 body = """
 **Here's what you'll be asked to do in this task:**
 
