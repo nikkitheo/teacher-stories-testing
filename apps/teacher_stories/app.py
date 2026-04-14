@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 import json
 import sys
+import uuid
 from enum import Enum
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -256,8 +257,10 @@ def main() -> None:
 
     step = current_step(context, Step)
     if not context.get("participant_id"):
-        render_missing_pid_screen()
-        return
+        if not st.secrets.get("ALLOW_NO_PID", False):
+            render_missing_pid_screen()
+            return
+        context.set("participant_id", f"standalone-{uuid.uuid4().hex[:8]}")
 
     try:
         result = run_step(step_specs[step.value], context=context, services=services)
