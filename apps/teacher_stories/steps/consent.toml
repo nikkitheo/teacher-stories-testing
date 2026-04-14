@@ -1,0 +1,15 @@
+[ui]
+title = "Welcome to this study task!"
+hide_title = true
+body = """
+**Here's what you'll be asked to do in this task:**
+
+1. You will be asked a few questions about **which pupils you think would benefit most from not having access to social media** a short chat-style exchange.
+2. The system will then turn your answers into a few short narratives in different styles. You'll be asked to choose the one that best captures what you said and can edit it before submitting.
+3. You will then be asked to repeat the process to share your views on **which pupils you think might lose out most from not having access to social media**. 
+
+**Please don't include anything in your responses that could identify a specific pupil or anyone else (e.g., names or other identifying details)**.
+
+When you're ready, press the button below to continue.
+"""
+button_label = "Continue"

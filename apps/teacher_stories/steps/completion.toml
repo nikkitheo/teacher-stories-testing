@@ -1,0 +1,8 @@
+[ui]
+title = "Task completed!"
+body = """
+Thank you for completing this task. Your responses have been saved. Here are your two final narratives.
+"""
+closing = """
+**Please return to the survey** to complete the final section.
+"""

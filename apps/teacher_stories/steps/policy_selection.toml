@@ -1,0 +1,103 @@
+[ui]
+title = "Policies instead of (or alongside) a ban"
+hide_title = true
+body = """
+These are some of the other options being considered. Please select any that you think might have more positive than negative impact. Your two narratives are available below for reference.
+"""
+
+[[ui.context_state_keys]]
+key = "flow_1_final_scenario"
+title = "Your first narrative (pupils who would benefit from a ban)"
+collapsible = true
+expanded = false
+
+[[ui.context_state_keys]]
+key = "flow_2_final_scenario"
+title = "Your second narrative (pupils who would lose out from a ban)"
+collapsible = true
+expanded = false
+
+[[ui.fields]]
+type = "grouped_checkbox"
+response_key = "selected_policy_measures"
+min_selections = 1
+required = true
+required_message = "Please select at least one option to continue."
+
+# ---- Age-based restrictions ----
+
+[[ui.fields.options]]
+group = "Age-based restrictions"
+title = "A minimum age of access for social media"
+body = "A legal requirement that social media services cannot be used by anyone younger than a minimum age, effectively a ban for children below that age."
+
+[[ui.fields.options]]
+group = "Age-based restrictions"
+title = "Age restrictions for social media platforms depending on how risky they are for children"
+body = "Having to be above a certain age to use different social media platforms, depending on how risky they are for children. This would be a similar approach to how age ratings for films work (i.e. films being a 12A or 15)."
+
+[[ui.fields.options]]
+group = "Age-based restrictions"
+title = "Age restrictions for certain features, depending on how risky they are for children"
+body = "Having to be above a certain age to use certain features, like connecting or talking to strangers, location sharing, livestreaming and disappearing content."
+
+[[ui.fields.options]]
+group = "Age-based restrictions"
+title = "Require parental consent for under-16s on social media"
+body = "Requiring all under-16s to get consent from their parents if they want to go on social media."
+
+# ---- Stronger rules for technology companies ----
+
+[[ui.fields.options]]
+group = "Stronger rules for technology companies"
+title = "Stronger rules on technology companies to protect children from harm"
+body = "Stronger rules on technology companies so they legally have to protect children from harmful content and negative experiences."
+
+[[ui.fields.options]]
+group = "Stronger rules for technology companies"
+title = "Stronger rules on technology companies to support children's wellbeing"
+body = "Stronger rules for technology companies meaning they not only have to keep children safe, but make sure social media has a positive impact on children's lives and wellbeing."
+
+[[ui.fields.options]]
+group = "Stronger rules for technology companies"
+title = "Stronger rules on technology companies to show high-quality content"
+body = "Stronger rules meaning technology companies have to show high quality content to children."
+
+# ---- Time controls ----
+
+[[ui.fields.options]]
+group = "Time controls"
+title = "Restrict access to certain features for young people under a certain age"
+body = "Having to be above a certain age to use features that make children want to spend more time on social media – such as endless scrolling, notifications, and autoplay."
+
+[[ui.fields.options]]
+group = "Time controls"
+title = "Restricting overnight access to individual social media apps"
+body = "Not letting children use certain social media apps and websites at night."
+
+[[ui.fields.options]]
+group = "Time controls"
+title = "Time limits for individual social media apps"
+body = "Time limits on how long children can use different social media apps and websites each day."
+
+# ---- Non-regulatory support ----
+
+[[ui.fields.options]]
+group = "Non-regulatory support"
+title = "Develop best practice principles for industry"
+
+[[ui.fields.options]]
+group = "Non-regulatory support"
+title = "Develop guidance for parents and carers"
+
+[[ui.fields.options]]
+group = "Non-regulatory support"
+title = "Develop guidance for children"
+
+[[ui.fields.options]]
+group = "Non-regulatory support"
+title = "Reviewing international approaches"
+
+[[ui.fields.options]]
+group = "Non-regulatory support"
+title = "Industry voluntarily promoting high quality content for children"

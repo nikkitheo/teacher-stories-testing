@@ -1,0 +1,24 @@
+[ui]
+title = "Adapt the second narrative"
+body = "You can revise the text yourself, or ask the AI to suggest a change."
+edit_title = "Adapt yourself"
+assistant_title = "Adapt with AI"
+panel_layout = "columns"
+assistant_intro = "What would you like to change?"
+thinking_text = "Thinking..."
+processing_text = "Working on your updated narrative..."
+reset_button = "Reset to original"
+done_button = "Continue"
+reject_button = "Try again"
+accept_button = "Use this version"
+input_placeholder = "Describe what you'd like to change..."
+height = 220
+
+[adaptation]
+persona = "You're helping someone revise a narrative containing their views and experiences so it reflects what they wanted to share more accurately."
+guidance = "Keep the original voice and meaning as stable as possible while making the requested change."
+
+[adaptation.example]
+scenario = "A Year 8 student in my class was recently diagnosed with ADHD. Following his diagnosis, he began engaging with content creators on TikTok who discuss their experiences with the condition. This helped him recognise his own experiences in the accounts of others, and he subsequently demonstrated improved self-advocacy in the classroom."
+request = "This reads like a clinical report. Can you make it sound warmer, more like a teacher actually talking about a kid they care about?"
+output = "A Year 8 boy I teach had just been diagnosed with ADHD and was figuring out what that meant for himself. He started watching creators on TikTok who talk openly about their own experience, and something shifted. He saw himself in their words, and brought that back into lessons with him, finally able to put language to what he was going through."

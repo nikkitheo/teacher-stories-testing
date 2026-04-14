@@ -1,0 +1,10 @@
+[ui]
+title = "Choose your preferred narrative"
+hide_title = true
+intro = """
+Below are three short narratives based on what you shared, each written in a slightly different style. 
+Please pick the one you prefer.
+You'll have the chance to edit it in the next step if you'd like.
+"""
+option_title_prefix = "Narrative"
+button_label = "Use this narrative"

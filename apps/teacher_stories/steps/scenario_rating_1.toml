@@ -1,0 +1,10 @@
+[ui]
+title = "Rate this narrative"
+hide_title = true
+prompt = "How well does this narrative capture what you want to say?"
+low_label = "This isn't quite right - let me make changes"
+high_label = "This captures it well - keep as is"
+button_label = "Continue"
+min = 0
+max = 10
+default = 5

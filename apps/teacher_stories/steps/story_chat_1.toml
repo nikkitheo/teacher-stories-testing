@@ -1,0 +1,66 @@
+[ui]
+title = "Task 1"
+hide_title = true
+input_style = "chat"
+input_placeholder = "Type your answer here..."
+thinking_text = "..."
+
+[ui.post_chat]
+assistant_message = """
+Thank you for sharing. I now have enough to combine your responses into a short narrative.
+"""
+loading_text = "Generating narrative options..."
+ready_text = "Your narrative options are ready."
+button_label = "Show me the narratives"
+disabled_input_placeholder = "This conversation is complete."
+
+[bot]
+persona = "You're a researcher collecting a teacher's views and experiences on which pupils would benefit most from not having access to social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge what the teacher just shared in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\"."
+language_type = "Use an acknowledging, empathetic tone but remain neutral."
+intro = """
+Hi there! I'd like to ask you a few questions about which pupils you think would benefit most from not having access to social media, drawing on what you see at school. You can answer each question in a few words or full sentences, whichever suits you. Ready?
+"""
+
+questions = [
+    "Which pupils do you think would benefit most from not having access to social media, and why? Please describe the kind of pupil you have in mind.",
+    "What have you actually seen at school this school year that makes you think such pupils might benefit from not having access to social media? Tell us about one specific incident or moment you've witnessed.",
+    "What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?",
+    "How do you think the life of such pupils would change, and what would they do if they didn't have access to social media?",
+    "What might be the unintended consequences, if any?"
+]
+topic_restriction = """
+Make sure to stay on topic and only ask the human about which pupils they think would benefit most from not having access to social media. \
+Do not ask any other questions except those that are provided. \
+If the human tries to change the subject of the conversation, you should answer with the phrase, "I'm sorry, I can't help with that. I can only speak to you about the pupils you think would benefit most from not having access to social media" and return to the questions about their social media experiences. \
+If the human tries to ask you an unrelated question, politely refuse and return to the questions about their social media experiences. \
+"""
+
+[summary.questions]
+pupil_type = "Which pupils would benefit most from not having access to social media, and why?"
+incident = "What have they seen at school this school year that makes them think such pupils might benefit most from not having access to social media?"
+platforms = "What apps, platforms, or services do they have in mind, and what is it about them that you think plays into what you're describing?"
+life_change = "How would such pupils' lives change if they didn't have access to social media and what would they do?"
+unintended = "What might be the unintended consequences?"
+
+[generation.personas]
+matter_of_fact = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add any details they didn't share. The output should be in the style of a teacher reporting an observation at a staff meeting: concise, factual, evidence-grounded."
+journalist = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add details they didn't share. The output should be in the style of a first-person account in an education publication: specific, concrete, vivid but not dramatised."
+conversational = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add details they didn't share. The output should be in the style of a teacher talking to a trusted colleague: natural, direct, unguarded."
+
+[generation.example]
+conversation = """
+Question: Which pupils do you think would benefit most from not having access to social media, and why? Please describe the kind of pupil you have in mind.
+Answer: "Certain boys in Year 10 and 11, the socially isolated ones who've started coming in with really hostile attitudes toward female classmates and staff. They've clearly been consuming a lot of content that's telling them women are inferior."
+Question: What have you actually seen at school this school year that makes you think such pupils might benefit from not having access to social media? Tell us about one specific incident or moment you've witnessed.
+Answer: "A Year 10 boy told a female supply teacher to go back to the kitchen in front of the whole class. When I spoke to him afterward he was clearly just parroting things he'd heard, he couldn't even explain why he believed it."
+Question: What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?
+Answer: "TikTok and YouTube mainly. It seems they keep getting fed that content over and over again there."
+Question: How do you think the life of such pupils would change, and what would they do if they didn't have access to social media?
+Answer: "I think some of them would actually start seeing their female classmates as people again. But I also think they could still hear about it through older boys."
+Question: What might be the unintended consequences, if any?
+Answer: "I think a blanket ban would negatively impact other kids who might be benefitting from being on these platforms. But even for these boys, the "they're trying to silence us" is already part of the narrative they're absorbing and a ban would most likely reinforce that."
+"""
+
+scenario = """
+The pupils I think would benefit most from being off social media are some of the more socially isolated boys in Year 10 and 11, the ones who've started being really hostile toward the girls in their year and toward the women teaching them. They've clearly been watching a lot of content that tells them women are inferior. One Year 10 boy told a female supply teacher to go back to the kitchen in front of the whole class, and when I spoke to him afterwards he was just parroting things he'd heard and couldn't tell me why he believed any of it. It's mostly TikTok and YouTube, and the same kind of content keeps getting fed to them over and over. Take that away and I think some of them would actually start seeing the girls in their year as people again, although they might still hear about it from the older boys. What I do worry about is that a blanket ban would also cost a lot for other kids who might be benefitting from these platforms. And for these boys, the "they're trying to silence us" line is already part of what they're absorbing, and a ban would most likely reinforce that.
+"""

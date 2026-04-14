@@ -1,0 +1,17 @@
+[ui]
+title = "A minimum age of access for social media"
+hide_title = true
+body = """
+The government is considering introducing a legal requirement for social media services to have a minimum age of access. There is currently no such requirement, though many services set their minimum age policy at 13.
+
+A minimum age of access for a social media service would equate to a ban for anyone younger than the minimum age.
+"""
+button_label = "Continue"
+
+[[ui.fields]]
+type = "single_choice"
+response_key = "pre_reflection_opinion"
+prompt = "Would you support a legal requirement for social media services to have a minimum age of access?"
+options = ["Yes", "No", "Don't know / Prefer not to answer"]
+required = true
+required_message = "Please choose an option to continue."

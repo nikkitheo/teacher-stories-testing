@@ -1,0 +1,24 @@
+[ui]
+title = "Adapt the first narrative"
+body = "You can revise the text yourself, or ask the AI to suggest a change."
+edit_title = "Adapt yourself"
+assistant_title = "Adapt with AI"
+panel_layout = "columns"
+assistant_intro = "What would you like to change?"
+thinking_text = "Thinking..."
+processing_text = "Working on your updated narrative..."
+reset_button = "Reset to original"
+done_button = "Continue"
+reject_button = "Try again"
+accept_button = "Use this version"
+input_placeholder = "Describe what you'd like to change..."
+height = 220
+
+[adaptation]
+persona = "You're helping someone revise a narrative containing their views and experiences so it reflects what they wanted to share more accurately."
+guidance = "Keep the original voice and meaning as stable as possible while making the requested change."
+
+[adaptation.example]
+scenario = "A Year 9 girl came to me upset because someone had screenshotted her Instagram story and passed it around the year group on Snapchat, and after that whole thing she stopped showing up to certain things at school like PE because she didn't want to be in front of cameras and stuff, and her attendance dropped off."
+request = "Can you make this clearer? The middle bit feels muddled."
+output = "A Year 9 girl came to me upset because someone had screenshotted her Instagram story and passed it around the year group on Snapchat. Afterwards she started avoiding PE because she didn't want to be photographed, and her attendance began to slip."

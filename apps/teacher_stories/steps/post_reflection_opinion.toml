@@ -1,0 +1,27 @@
+[ui]
+title = "A minimum age of access for social media"
+hide_title = true
+body = """
+Having reflected on the possible impacts and alternatives, we'd like to ask you again. Your two narratives are available below if you'd like to re-read them.
+"""
+button_label = "Continue"
+
+[[ui.context_state_keys]]
+key = "flow_1_final_scenario"
+title = "Your first narrative (pupils who would benefit from a ban)"
+collapsible = true
+expanded = false
+
+[[ui.context_state_keys]]
+key = "flow_2_final_scenario"
+title = "Your second narrative (pupils who would lose out from a ban)"
+collapsible = true
+expanded = false
+
+[[ui.fields]]
+type = "single_choice"
+response_key = "post_reflection_opinion"
+prompt = "Would you support a legal requirement for social media services to have a minimum age of access?"
+options = ["Yes", "No", "Don't know / Prefer not to answer"]
+required = true
+required_message = "Please choose an option to continue."

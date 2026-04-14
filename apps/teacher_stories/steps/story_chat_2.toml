@@ -1,0 +1,67 @@
+[ui]
+title = "Task 2"
+hide_title = true
+input_style = "chat"
+input_placeholder = "Type your answer here..."
+thinking_text = "..."
+
+[ui.post_chat]
+assistant_message = """
+Thank you for sharing. I now have enough to combine your responses into a short narrative.
+"""
+loading_text = "Generating your narrative..."
+ready_text = "Your narrative is ready."
+button_label = "Show me the narrative"
+disabled_input_placeholder = "This conversation is complete."
+
+[bot]
+persona = "You're a researcher collecting a teacher's views and experiences on which pupils would lose out most if they couldn't access social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge what the teacher just shared in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\"."
+language_type = "Use an acknowledging, empathetic tone but remain neutral."
+intro = """
+Now I'd like to ask about the other side: about the pupils you think would lose out most if they couldn't access social media? Again, a few words or full sentences, whichever suits you. Ready?
+"""
+
+questions = [
+    "Which pupils do you think would lose out most if they couldn't access social media, and why? Please describe the kind of pupil you have in mind.",
+    "What have you actually seen at school this school year that makes you think such pupils might lose out most from a ban? Tell us about one specific incident or moment you've witnessed.",
+    "What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?",
+    "How do you think their life would change, and what would such pupils do if they didn't have access to social media?",
+    "What might be the unintended consequences, if any?"
+]
+
+topic_restriction = """
+Make sure to stay on topic and only ask the human about which pupils they think would lose out most from not having access to social media. \
+Do not ask any other questions except those that are provided. \
+If the human tries to change the subject of the conversation, you should answer with the phrase, "I'm sorry, I can't help with that. I can only speak to you about the pupils you think would lose out most from not having access to social media" and return to the questions about their social media experiences. \
+If the human tries to ask you an unrelated question, politely refuse and return to the questions about their social media experiences. \
+"""
+
+[summary.questions]
+pupil_type = "Which pupils would lose out most if they couldn't access social media, and why?"
+incident = "What have they seen at school this school year that makes them think such pupils might lose out most from not having access to social media?"
+platforms = "What apps, platforms, or services do they have in mind, and what is it about them that plays into what they're describing?"
+life_change = "How would such pupils' lives change if they didn't have access to social media and what would they do?"
+unintended = "What might be the unintended consequences?"
+
+[generation.personas]
+matter_of_fact = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add any details they didn't share. The output should be in the style of a teacher reporting an observation at a staff meeting: concise, factual, evidence-grounded."
+journalist = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add details they didn't share. The output should be in the style of a first-person account in an education publication: specific, concrete, vivid but not dramatised."
+conversational = "Based on a teacher's responses to a set of questions, write a short first-person narrative that flows like a coherent story. Build it from the participant's own details and language. Don't add details they didn't share. The output should be in the style of a teacher talking to a trusted colleague: natural, direct, unguarded."
+
+[generation.example]
+conversation = """
+Question: Which pupils do you think would lose out most if they couldn't access social media, and why? Please describe the kind of pupil you have in mind.
+Answer: "The isolated ones. Kids who don't really fit in at school but find their people online."
+Question: What have you actually seen at school this school year that makes you think such pupils might lose out most from not having access? Tell us about one specific incident or moment you've witnessed.
+Answer: "Year 8 boy, recently diagnosed with ADHD. Started quoting TikTokers talking about their own ADHD. It gave him language for what he was going through and started speaking up in class in ways he hadn't before."
+Question: What are the apps, platforms, or services you have in mind, and why those in particular?
+Answer: "TikTok mainly. It's not just content, he'd found actual communities of people talking about the same thing."
+Question: How do you think their life would change, and what would such pupils do if they didn't have access?
+Answer: "He'd lose that sense of not being alone in it. We can support him but it's not the same as hearing it from other young people."
+Question: What might be the unintended consequences, if any?
+Answer: "They'd retreat. The ones who benefit most from those communities are usually the ones least likely to open up in person."
+"""
+
+scenario = """
+The pupils I think would lose out most if they couldn't access social media are the more isolated ones, the kids who don't really fit in at school but find their people online. I'm thinking of a Year 8 boy in my class who'd recently been diagnosed with ADHD. He started quoting TikTokers talking about their own ADHD, and it gave him language for what he was going through, and he started speaking up in class in ways he hadn't before. It's TikTok mainly, and it isn't just the content, he'd found actual communities of people talking about the same thing. Take that away and he'd lose that sense of not being alone in it. We can support him at school, but it isn't the same as him hearing it from other young people. What I do worry about is that pupils like him would just retreat. The ones who benefit most from those communities are usually the ones least likely to open up in person.
+"""
