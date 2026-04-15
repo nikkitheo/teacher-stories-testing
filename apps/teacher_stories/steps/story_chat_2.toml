@@ -18,7 +18,7 @@ disabled_input_placeholder = "This conversation is complete."
 persona = "You're a researcher collecting a teacher's views and experiences on which pupils would lose out most if they couldn't access social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge what the teacher just shared in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\"."
 language_type = "Use an acknowledging, empathetic tone but remain neutral."
 intro = """
-Now I'd like to ask about the other side: about the pupils you think would lose out most if they couldn't access social media? Again, a few words or full sentences, whichever suits you. Ready?
+Now I'd like to ask about the other side: about the pupils you think would lose out most if they couldn't access social media. Again, a few words or full sentences, whichever suits you. Ready?
 """
 
 questions = [
