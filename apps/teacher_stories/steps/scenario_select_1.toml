@@ -1,6 +1,6 @@
 [ui]
-title = "Choose your preferred narrative"
-hide_title = true
+title = "📝 Choose your preferred narrative"
+hide_title = false
 intro = """
 Below are three short narratives based on what you shared, each written in a slightly different style. 
 Please pick the one you prefer.

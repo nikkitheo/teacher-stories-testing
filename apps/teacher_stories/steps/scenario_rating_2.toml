@@ -1,6 +1,7 @@
 [ui]
-title = "Rate this narrative"
-hide_title = true
+title = "📊 Rate this narrative"
+hide_title = false
+intro = "This narrative is written in the same style you picked for the first one."
 prompt = "How well does this narrative capture what you want to say?"
 low_label = "This isn't quite right - let me make changes"
 high_label = "This captures it well - keep as is"

@@ -18,14 +18,18 @@ disabled_input_placeholder = "This conversation is complete."
 persona = "You're a researcher collecting a teacher's views and experiences on which pupils would benefit most from not having access to social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge what the teacher just shared in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\"."
 language_type = "Use an acknowledging, empathetic tone but remain neutral."
 intro = """
-Hi there! I'd like to ask you a few questions about which pupils you think would benefit most from not having access to social media, drawing on what you see at school. You can answer each question in a few words or full sentences, whichever suits you. Ready?
+Hi there! I'd like to ask you a few questions about which pupils you think would benefit most from not having access to social media, drawing on what you see at school.
+
+You can answer each question in a few words or full sentences, whichever suits you.
+
+When you’re ready, type ‘ready’ in the text box below to start.
 """
 
 questions = [
     "Which pupils do you think would benefit most from not having access to social media, and why? Please describe the kind of pupil you have in mind.",
-    "What have you actually seen at school this school year that makes you think such pupils might benefit from not having access to social media? Tell us about one specific incident or moment you've witnessed.",
+    "What have you actually seen at school this academic year that makes you think such pupils might benefit from not having access to social media? Tell us about one specific incident or moment you've witnessed.",
     "What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?",
-    "How do you think the life of such pupils would change, and what would they do if they didn't have access to social media?",
+    "How do you think the life of such pupils would change, and what would they do, if they didn't have access to social media?",
     "What might be the unintended consequences, if any?"
 ]
 topic_restriction = """
@@ -55,7 +59,7 @@ Question: What have you actually seen at school this school year that makes you 
 Answer: "A Year 10 boy told a female supply teacher to go back to the kitchen in front of the whole class. When I spoke to him afterward he was clearly just parroting things he'd heard, he couldn't even explain why he believed it."
 Question: What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?
 Answer: "TikTok and YouTube mainly. It seems they keep getting fed that content over and over again there."
-Question: How do you think the life of such pupils would change, and what would they do if they didn't have access to social media?
+Question: How do you think the life of such pupils would change, and what would they do, if they didn't have access to social media?
 Answer: "I think some of them would actually start seeing their female classmates as people again. But I also think they could still hear about it through older boys."
 Question: What might be the unintended consequences, if any?
 Answer: "I think a blanket ban would negatively impact other kids who might be benefitting from being on these platforms. But even for these boys, the "they're trying to silence us" is already part of the narrative they're absorbing and a ban would most likely reinforce that."
