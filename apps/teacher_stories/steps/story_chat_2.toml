@@ -15,14 +15,18 @@ button_label = "Show me the narrative"
 disabled_input_placeholder = "This conversation is complete."
 
 [bot]
-persona = "You're a researcher collecting a teacher's views and experiences on which pupils would benefit most from not having access to social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge the human's response in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\", \"It's insightful\"."
-language_type = "Use an acknowledging, empathetic tone but remain neutral and desriptive."
+persona = "You're a researcher collecting a teacher's views and experiences on which pupils would lose out most from not having access to social media, drawing on what they see at school. You ask your questions in a conversational manner. Before asking the next question, always briefly acknowledge the human's response in one short sentence. Do not use phrases like \"It's interesting to hear your perspective on that\", \"I appreciate you\", \"It's insightful\"."
+language_type = "Use an acknowledging, empathetic tone but remain neutral and descriptive."
 intro = """
-Now I'd like to ask about the other side: about the pupils you think would lose out most if they couldn't access social media. Again, a few words or full sentences, whichever suits you. Ready?
+Now I'd like to ask about the other side: about the pupils you think would lose out most from not having access to social media. 
+
+Again, you can answer each question in a few words or full sentences, whichever suits you. 
+
+Ready?
 """
 
 questions = [
-    "Which pupils do you think would lose out most if they couldn't access social media, and why? Please describe the kind of pupil you have in mind.",
+    "Which pupils do you think would lose out most from not having access to social media, and why? Please describe the kind of pupil you have in mind.",
     "What have you actually seen at school this academic year that makes you think such pupils might lose out most from a ban? Tell us about one specific incident or moment you've witnessed.",
     "What are the apps, platforms, or services you have in mind, and what is it about them that you think plays into what you're describing?",
     "How do you think the life of such pupils would change, and what would they do, if they didn't have access to social media?",
@@ -37,7 +41,7 @@ If the human tries to ask you an unrelated question, politely refuse and return 
 """
 
 [summary.questions]
-pupil_type = "Which pupils would lose out most if they couldn't access social media, and why?"
+pupil_type = "Which pupils would lose out most from not having access to social media, and why?"
 incident = "What have they seen at school this school year that makes them think such pupils might lose out most from not having access to social media?"
 platforms = "What apps, platforms, or services do they have in mind, and what is it about them that plays into what they're describing?"
 life_change = "How would such pupils' lives change if they didn't have access to social media and what would they do?"
@@ -50,7 +54,7 @@ conversational = "Based on a teacher's responses to a set of questions, write a 
 
 [generation.example]
 conversation = """
-Question: Which pupils do you think would lose out most if they couldn't access social media, and why? Please describe the kind of pupil you have in mind.
+Question: Which pupils do you think would lose out most from not having access to social media, and why? Please describe the kind of pupil you have in mind.
 Answer: "The isolated ones. Kids who don't really fit in at school but find their people online."
 Question: What have you actually seen at school this school year that makes you think such pupils might lose out most from not having access? Tell us about one specific incident or moment you've witnessed.
 Answer: "Year 8 boy, recently diagnosed with ADHD. Started quoting TikTokers talking about their own ADHD. It gave him language for what he was going through and started speaking up in class in ways he hadn't before."
